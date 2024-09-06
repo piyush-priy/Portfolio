@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piyush's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body></body>
+    <script src="script.js"></script>
+    <nav id="desktop-nav">
+        <div class="logo">Piyush Priy</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Piyush Priy</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile_pic.png" alt="Profile Pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1"> Hello, I am</p>
+            <h1 class="title">Piyush Priy</h1>
+            <p class="section__text__p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button 
+                class="btn btn-color-2" 
+                onclick="window.open('./assets/PIYUSH_PRIY.pdf')">
+                    My Resume
+                </button>
+                <button 
+                class="btn btn-color-1" 
+                onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img 
+                src="./assets/linkedin.png" 
+                alt="My Linkedin"
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/piyush-priy-9b0030253'"
+                />
+                <img 
+                src="./assets/github.png" 
+                alt="My Github"
+                class="icon" 
+                onclick="location.href='https://github.com/piyush-priy'"
+                />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h3 class="section__text__p1">Get to know more</h3>
+        <h2 class="title">About Me</h2>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img
+                            src="./assets/education.png"
+                            alt="Education Icon"
+                            class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>M.Tech <br/>Computer Science Engineering</p>
+                    </div>
+                    <div class="details-container">
+                        <img
+                            src="./assets/experience.png"
+                            alt="Achivement Icon"
+                            class="icon"
+                        />
+                        <h3>Achivement</h3>
+                        <p>GATE <br/>97.6 percetile in GATE-2024 CS </p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        I am an M.Tech Computer Science student with a strong foundation in software engineering, algorithms, and systems development. 
+                        I have experience in a range of technologies, including C++, Python, JavaScript, and Unreal Engine, and have worked on diverse projects spanning game development, simulations, and problem-solving in real-world scenarios. 
+                        My academic background and hands-on projects have given me a keen interest in AI, machine learning, and system design, and I am always eager to take on challenging technical problems and contribute to innovative solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow"
+        onclick="location.href='./#education'"/>
+    </section>
+    <section id="education">
+        <h3 class="section__text__p1">Educational Background</h3>
+        <h2 class="title">Education</h2>
+        <div class="section-container">
+            <div class="education-details-container">
+                <div class="about-edu-containers">
+                    <div class="edu-container">
+                        <h4>International Institute of Information Technology, Hyderabad</h3>
+                        <p>M.Tech: Computer Science and Engineering<br/>2024 - 2026<br/>Hyderabad</p>
+                    </div>
+                    <div class="edu-container">
+                        <h4>GITA Autonomous College</h3>
+                        <p>B.Tech: Computer Science and Information Technology<br/>(CGPA: 8.38 / 10.00)<br/>2020 - 2024<br/>Bhubaneswar</p>
+                    </div>
+                </div>
+                <div class="about-edu-containers">
+                    <div class="edu-container">
+                        <h4>Ishan International Public School</h3>
+                        <p>Higher Secondary (12th) (Percentage: 82%)<br/>2019<br/>Patna</p>
+                    </div>
+                    <div class="edu-container">
+                        <h4>S.T. Severin’s High School</h3>
+                        <p>Secondary (10th) (CGPA: 9.6)<br/>2017<br/>Patna</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
