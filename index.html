@@ -3,197 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Piyush's Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script src="script.js" defer></script>
 </head>
-<body></body>
-    <script src="script.js"></script>
-    <nav id="desktop-nav">
-        <div class="logo">Piyush Priy</div>
-        <div>
+<body>
+    <header>
+        <nav id="desktop-nav">
+            <h1 class="logo">Piyush Priy</h1>
             <ul class="nav-links">
+                <li><a href="#profile">Profile</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#education">Education</a></li>
             </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Piyush Priy</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+        </nav>
+        <nav id="hamburger-nav">
+            <h1 class="logo">Piyush Priy</h1>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="menu-links">
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                </ul>
             </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#education" onclick="toggleMenu()">Education</a></li>
-                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
+
     <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/profile_pic.png" alt="Profile Pic">
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1"> Hello, I am</p>
-            <h1 class="title">Piyush Priy</h1>
-            <p class="section__text__p2">Computer Science Major</p>
-            <div class="btn-container">
-                <button 
-                class="btn btn-color-2" 
-                onclick="window.open('./assets/PIYUSH_PRIY.pdf')">
-                    My Resume
-                </button>
-                <button 
-                class="btn btn-color-1" 
-                onclick="location.href='./#contact'">
-                    Contact Info
-                </button>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/profile_pic.png" alt="Profile Picture" class="profile-pic">
             </div>
-            <div id="socials-container">
-                <img 
-                src="./assets/linkedin.png" 
-                alt="My Linkedin"
-                class="icon" 
-                onclick="location.href='https://www.linkedin.com/in/piyush-priy-9b0030253'"
-                />
-                <img 
-                src="./assets/github.png" 
-                alt="My Github"
-                class="icon" 
-                onclick="location.href='https://github.com/piyush-priy'"
-                />
+            <div class="section__text">
+                <h1 class="title">Piyush Priy</h1>
+                <p class="section__text__p1">Computer Science Major</p>
+                <!-- <p class="section__text__p2">I am skilled in C, C++, Python, JavaScript, HTML, and CSS with an interest in projects related to core development and innovation.</p> -->
+                <div id="socials-container">
+                    <a href="https://github.com/piyush-priy" class="social-link" target="_blank">GitHub</a>
+                    <a href="./assets/PIYUSH_PRIY.pdf" class="resume-btn" download>Download Resume</a>
+                </div>
             </div>
         </div>
     </section>
+
     <section id="about">
-        <h3 class="section__text__p1">Get to know more</h3>
-        <h2 class="title">About Me</h2>
         <div class="section-container">
+            <h2>About Me</h2>
             <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img
-                            src="./assets/education.png"
-                            alt="Education Icon"
-                            class="icon"
-                        />
-                        <h3>Education</h3>
-                        <p>M.Tech <br/>Computer Science Engineering</p>
-                    </div>
-                    <div class="details-container">
-                        <img
-                            src="./assets/experience.png"
-                            alt="Achivement Icon"
-                            class="icon"
-                        />
-                        <h3>Achivement</h3>
-                        <p>GATE <br/>97.6 percetile in GATE-2024 CS </p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>
-                        I am an M.Tech Computer Science student with a strong foundation in software engineering, algorithms, and systems development. 
-                        I have experience in a range of technologies, including C++, Python, JavaScript, and Unreal Engine, and have worked on diverse projects spanning game development, simulations, and problem-solving in real-world scenarios. 
-                        My academic background and hands-on projects have given me a keen interest in AI, machine learning, and system design, and I am always eager to take on challenging technical problems and contribute to innovative solutions.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow"
-        onclick="location.href='./#education'"/>
-    </section>
-    <section id="education">
-        <h3 class="section__text__p1">Education Background</h3>
-        <h2 class="title">Education</h2>
-        <div class="section-container">
-            <div class="education-details-container">
-                <div class="education-containers">
-                    <div class="details-container">
-                        <h3>M.Tech</h3>
-                        <p>Computer Science and Engineering<br />
-                        International Institute of Information Technology, Hyderabad<br />
-                        2024 - 2026<br />
-                        Hyderabad</p>
-                    </div>
-                    <div class="details-container">
-                        <h3>B.Tech</h3>
-                        <p>Computer Science and Information Technology (CGPA: 8.38 / 10.00)<br />
-                        GITA Autonomous College<br />
-                        2020 - 2024<br />
-                        Bhubaneswar</p>
-                    </div>
-                    <div class="details-container">
-                        <h3>Higher Secondary (12th)</h3>
-                        <p>Percentage: 82%<br />
-                        Ishan International Public School<br />
-                        2019<br />
-                        Patna</p>
-                    </div>
-                    <div class="details-container">
-                        <h3>Secondary (10th)</h3>
-                        <p>CGPA: 9.6<br />
-                        S.T. Severin’s High School<br />
-                        2017<br />
-                        Patna</p>
-                    </div>
-                </div>
+                <p class="info">I am an M.Tech Computer Science student with a strong foundation in software engineering, algorithms, and systems development. I have experience in a range of technologies, including C++, Python, JavaScript, and Unreal Engine, and have worked on diverse projects spanning game development, simulations, and problem-solving in real-world scenarios. My academic background and hands-on projects have given me a keen interest in AI, machine learning, and system design, and I am always eager to take on challenging technical problems and contribute to innovative solutions. </p>
             </div>
         </div>
     </section>
-    
+
     <section id="skills">
-        <h3 class="section__text__p1">What I do best</h3>
-        <h2 class="title">Skills</h2>
-            <div class="skills-details-container">
-                <div class="skills-containers">
-                    <div class="details-container">
-                        <img
-                            src="./assets/checkmark.png"
-                            alt="Programming Icon"
-                            class="icon"
-                        />
-                        <h3>Programming Languages</h3>
-                        <p>C, C++, Python, JavaScript</p>
-                    </div>
-                    <div class="details-container">
-                        <img
-                            src="./assets/checkmark.png"
-                            alt="Web Development Icon"
-                            class="icon"
-                        />
-                        <h3>Web Development</h3>
-                        <p>HTML, CSS, JavaScript, React</p>
-                    </div>
-                    <div class="details-container">
-                        <img
-                            src="./assets/checkmark.png"
-                            alt="Software Tools Icon"
-                            class="icon"
-                        />
-                        <h3>Software Tools</h3>
-                        <p>Unreal Engine, Git, GitHub, Blender 3D</p>
-                    </div>
-                    <div class="details-container">
-                        <img
-                            src="./assets/checkmark.png"
-                            alt="Database Icon"
-                            class="icon"
-                        />
-                        <h3>Databases</h3>
-                        <p>MySQL, PostgreSQL</p>
-                    </div>
+        <h2 class="sk">Skills</h2>
+        <div class="skills-details-container">
+            <div class="skills-containers">
+                <div class="details-container">
+                    <h3 class="info">Programming Languages</h3>
+                    <p class="info">C, C++, Python, JavaScript, SQL</p>
+                </div>
+                <div class="details-container">
+                    <h3 class="info">Web Technologies</h3>
+                    <p class="info">HTML, CSS, JavaScript, PHP</p>
+                </div>
+                <div class="details-container">
+                    <h3 class="info">Frameworks & Libraries</h3>
+                    <p class="info">React, Raylib, Unreal Engine (Blueprint), Node.js</p>
+                </div>
+                <div class="details-container">
+                    <h3 class="info">Tools & Software</h3>
+                    <p class="info">Git, GitHub, Blender 3D, Microsoft Office</p>
+                </div>
+                <div class="details-container">
+                    <h3 class="info">Databases</h3>
+                    <p class="info">MySQL, PostgreSQL</p>
+                </div>
+                <div class="details-container">
+                    <h3 class="info">Operating Systems</h3>
+                    <p class="info">Linux, Windows</p>
                 </div>
             </div>
+        </div>
     </section>
-    
+
+    <section id="projects">
+        <h2 class="sk">Projects</h2>
+        <div class="projects-details-container">
+            <div class="projects-containers">
+                <div class="details-container">
+                    <h3 class="info">Self-Driving Car Simulation</h3>
+                    <p class="info">Developed a virtual world with HTML canvas to simulate self-driving cars with real-time traffic integration and procedural road generation.</p>
+                </div>
+                <div class="details-container">
+                    <h3 class="info">Arcade Games</h3>
+                    <p class="info">Created multiple mini arcade games using C++ and Raylib, focusing on dynamic 2D animations and user interaction.</p>
+                </div>
+                <div class="details-container">
+                    <h3 class="info">Anti-Doping Awareness Game</h3>
+                    <p class="info">Developed a 3D awareness game on anti-doping in sports using C++ and Unreal Engine's Blueprint during Smart India Hackathon 2022.</p>
+                </div>
+                <div class="details-container">
+                    <h3 class="info">Custom Shell Implementation</h3>
+                    <p class="info">Built a fully functional shell in C with support for input/output redirection, piping, and command history.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2 class="sk">Education</h2>
+        <div class="education-details-container">
+            <div class="education-containers">
+                <div class="details-container">
+                    <h3 class="info">M.Tech - Computer Science and Engineering</h3>
+                    <p class="info">International Institute of Information Technology, Hyderabad (2024 - 2026)</p>
+                </div>
+                <div class="details-container">
+                    <h3 class="info">B.Tech - Computer Science and Information Technology</h3>
+                    <p class="info">GITA Autonomous College, Bhubaneswar (2020 - 2024), CGPA: 8.38</p>
+                </div>
+                <div class="details-container">
+                    <h3 class="info">Higher Secondary (12th)</h3>
+                    <p class="info">Ishan International Public School, Patna (2019), Percentage: 82%</p>
+                </div>
+                <div class="details-container">
+                    <h3 class="info">Secondary (10th)</h3>
+                    <p class="info">S.T. Severin’s High School, Patna (2017), CGPA: 9.6</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-container">
+                <p>Email: <a href="mailto:piyush201350@gmail.com">piyush201350@gmail.com</a></p>
+                <p>Phone: <a href="tel:+918210775268">+91 8210775268</a></p>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
